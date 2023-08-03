@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Estilizando topbar */
+
+.topbar{
+    height: 64px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    
+    
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.663);
+}
+
+.icones{
+    display: flex;
+    transition: margin-left 0.5s ease-in-out;
+    height: 100%;
+    margin-left: 1px;   
+    align-items: center;
+
+}
+
+.logo-top img{
+    height: 100%;
+    width: 216px;
+}
+
+
+.open-menu-side button {
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchtop button{
+    border: 3px solid rgba(255, 0, 0, 0.713);
+    display: flex;
+    background-color: white;
+    border-radius: 100px;
+    height: 34px;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.searchtop button i{
+    background-color: red;
+    color: white;
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+.input-top{
+    background-color:white;
+    color: red;
+    border: none;
+    padding-left: 8px;
+}
+
+.iconstop{
+
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.user{
+    background-color: red;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/*hover top bar*/
+
+.open-menu-side button:hover{
+    border-radius: 10px;
+    background-color: gray;
+}
+
+/* agora sidebar*/
+
+.sidebar{
+    width: 216px;
+    height: 100vh;
+    background-color: rgb(133, 78, 253); 
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: -216px;
+    transition: left 0.5s ease-in-out;
+    
+}
+
+.margin-sidebar{
+    height: 100%;
+    position: relative;    
+}
+
+.menu-side{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    height: 500px;
+    position: relative;
+    justify-content: space-between;    
+}
+
+.logo img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icons-side{    
+    position: relative;
+    height: 100%;    
+    width: 100%;
+}
+
+.icons{
+    position: relative;
+    transition: transform 0.1s ease;
+}
+
+.hr-top,
+.hr-mid
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hr-bottom{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+
+
+.icons  i{
+    font-size: 24px;
+    height: 100%;
+}
+
+.icons a{
+    
+    justify-content: start;
+    justify-items: end;
+    align-items: end;
+    height:  34px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    
+}
+
+.icons h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+
+/* Sript */
+
+.sidebar.active {
+    left: 0;
+}
+
+.banner {
+    /* margin-left: 216px; /* Adicione um recuo à esquerda para acomodar a largura da barra lateral */
+    /* margin-right: 216px;  */
+    width: auto;
+    height: 300px;
+
+    position: relative;
+    
+}
+
+.img-carrosel{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-carrosel img{
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    left: 0;
+    border-radius: 10px;
+}
+
+.mimg img{
+    width: 720px;
+}
+
+.eimg img,
+.dimg img{
+    width: 360px;
+}
